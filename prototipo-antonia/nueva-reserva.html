@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nueva reserva · Antonia Centro de Estética</title>
+<link rel="stylesheet" href="static/bootstrap.min.css">
+<link rel="stylesheet" href="static/bootstrap-icons.min.css">
+<link rel="stylesheet" href="static/app.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23BE185D'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EA%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="app-header d-flex align-items-center px-3 gap-3">
+  <button class="btn btn-outline-secondary d-lg-none px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu" aria-label="Abrir menú"><i class="bi bi-list fs-4"></i></button>
+  <a class="brand fs-5" href="agenda.html">Antonia<span class="dot">.</span> <small class="d-none d-md-inline">Centro de Estética</small></a>
+  <div class="ms-auto d-flex align-items-center gap-2 header-right">
+    <span class="local-chip"><i class="bi bi-geo-alt-fill"></i> <span data-local>Mall Plaza Calama</span></span>
+    <a data-rol="propietaria" class="btn btn-sm btn-outline-primary d-none d-sm-inline-flex" href="sucursales.html"><i class="bi bi-arrow-left-right"></i> Cambiar sucursal</a>
+    <div class="dropdown">
+      <button class="btn btn-sm btn-light border dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-circle"></i> <span class="d-none d-sm-inline" data-rol-nombre>Recepcionista</span></button>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><span class="dropdown-item-text small text-muted">Sesión iniciada como <b data-rol-nombre>Recepcionista</b></span></li>
+        <li data-rol="propietaria"><a class="dropdown-item" href="sucursales.html"><i class="bi bi-arrow-left-right"></i> Cambiar sucursal</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="index.html" data-logout><i class="bi bi-box-arrow-right"></i> Cerrar sesión</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="d-flex">
+  <aside class="app-sidebar d-none d-lg-block"><ul class="nav flex-column gap-1 p-3 side-nav"><li class="nav-item"><a class="nav-link active" href="agenda.html" aria-current="page"><i class="bi bi-calendar3"></i>Agenda</a></li><li class="nav-item"><a class="nav-link" href="asistencia.html"><i class="bi bi-person-check"></i>Asistencia</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="especialistas.html"><i class="bi bi-people"></i>Especialistas</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="comisiones.html"><i class="bi bi-cash-coin"></i>Comisiones</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="sucursales.html"><i class="bi bi-shop"></i>Sucursales</a></li><li class="sep">Otros módulos</li><li class="nav-item"><a class="nav-link otro" href="caja.html"><i class="bi bi-receipt"></i>Ventas y caja</a></li><li class="nav-item"><a class="nav-link otro" href="inventario.html"><i class="bi bi-box-seam"></i>Inventario</a></li><li class="nav-item"><a class="nav-link otro" href="reportes.html"><i class="bi bi-bar-chart"></i>Reportes</a></li></ul></aside>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="menu" aria-labelledby="menuLabel" style="width:280px">
+    <div class="offcanvas-header border-bottom"><h2 class="offcanvas-title h5 brand" id="menuLabel">Antonia<span class="dot">.</span></h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button></div>
+    <div class="offcanvas-body p-0"><ul class="nav flex-column gap-1 p-3 side-nav"><li class="nav-item"><a class="nav-link active" href="agenda.html" aria-current="page"><i class="bi bi-calendar3"></i>Agenda</a></li><li class="nav-item"><a class="nav-link" href="asistencia.html"><i class="bi bi-person-check"></i>Asistencia</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="especialistas.html"><i class="bi bi-people"></i>Especialistas</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="comisiones.html"><i class="bi bi-cash-coin"></i>Comisiones</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="sucursales.html"><i class="bi bi-shop"></i>Sucursales</a></li><li class="sep">Otros módulos</li><li class="nav-item"><a class="nav-link otro" href="caja.html"><i class="bi bi-receipt"></i>Ventas y caja</a></li><li class="nav-item"><a class="nav-link otro" href="inventario.html"><i class="bi bi-box-seam"></i>Inventario</a></li><li class="nav-item"><a class="nav-link otro" href="reportes.html"><i class="bi bi-bar-chart"></i>Reportes</a></li></ul></div>
+  </div>
+  <main class="app-main">
+    <nav aria-label="Ruta de navegación"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="agenda.html">Agenda</a></li><li class="breadcrumb-item active" aria-current="page">Nueva reserva</li></ol></nav>
+    <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+      <h1 class="mb-0 me-2">Nueva reserva</h1><span class="page-id" title="Código de pantalla en el informe">P-03</span>
+      <div class="ms-auto d-flex flex-wrap gap-2 acciones"></div>
+    </div>
+    <div class="contenido">
+<div class="row g-3">
+ <div class="col-xl-8">
+  <form id="f" class="card" data-go="agenda.html?ok=agendada" novalidate>
+   <div class="card-body p-4">
+    <h2 class="h5 mb-3"><span class="badge rounded-pill text-bg-dark me-2">1</span>Clienta</h2>
+    <label class="form-label" for="tel">Teléfono de la clienta</label>
+    <div class="input-group mb-2" style="max-width:460px">
+      <span class="input-group-text">+56</span>
+      <input class="form-control" id="tel" inputmode="tel" placeholder="9 8765 4321" required>
+      <button class="btn btn-outline-primary" type="button" id="buscar"><i class="bi bi-search"></i> Buscar</button>
+    </div>
+    <div class="form-text mb-3">Prueba con <b>9 8765 4321</b> (clienta registrada) o con cualquier otro número (clienta nueva).</div>
+    <div id="encontrada" class="alert alert-success d-none d-flex flex-wrap align-items-center gap-2" role="status">
+      <i class="bi bi-person-check-fill fs-4"></i><div class="flex-fill"><b>Daniela Pérez</b><br><span class="small">4 reservas anteriores · consentimiento registrado</span></div>
+      <button class="btn btn-sm btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#mHist"><i class="bi bi-clock-history"></i> Ver historial</button>
+    </div>
+    <div id="nueva" class="alert alert-warning d-none d-flex flex-wrap align-items-center gap-2" role="status">
+      <i class="bi bi-person-plus-fill fs-4"></i><div class="flex-fill"><b>No hay una clienta con ese teléfono.</b><br><span class="small">Regístrala para continuar.</span></div>
+      <button class="btn btn-sm btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#mCli"><i class="bi bi-person-plus"></i> Registrar clienta nueva</button>
+    </div>
+
+    <h2 class="h5 mt-4 mb-3"><span class="badge rounded-pill text-bg-dark me-2">2</span>Servicio y horario</h2>
+    <div class="row g-3">
+      <div class="col-md-6"><label class="form-label" for="serv">Servicio</label>
+        <select class="form-select" id="serv" required><option value="">Selecciona un servicio</option><option value="Manicure permanente" data-min="60">Manicure permanente · 60 min · desde $15.000</option><option value="Uñas acrílicas" data-min="120">Uñas acrílicas · 120 min · desde $25.000</option><option value="Pedicure" data-min="60">Pedicure · 60 min · desde $16.000</option><option value="Lifting de pestañas" data-min="60">Lifting de pestañas · 60 min · $20.000</option><option value="Diseño de cejas" data-min="30">Diseño de cejas · 30 min · $8.000</option><option value="Depilación facial" data-min="30">Depilación facial · 30 min · $7.000</option><option value="Depilación de piernas" data-min="60">Depilación de piernas · 60 min · $15.000</option><option value="Depilación axilas" data-min="30">Depilación axilas · 30 min · $6.000</option></select>
+        <div class="invalid-feedback">Selecciona un servicio.</div></div>
+      <div class="col-md-6"><label class="form-label" for="esp">Especialista</label>
+        <select class="form-select" id="esp" required><option value="">Selecciona una especialista</option><option value="camila">Camila Rojas</option><option value="fernanda">Fernanda Díaz</option><option value="javiera">Javiera Muñoz</option><option value="valentina">Valentina Soto</option></select>
+        <div class="invalid-feedback">Selecciona una especialista.</div></div>
+      <div class="col-md-6"><label class="form-label" for="fecha">Fecha</label>
+        <input class="form-control" id="fecha" type="date" value="2026-10-13" required></div>
+      <div class="col-md-6"><label class="form-label" for="hora">Hora de inicio</label>
+        <select class="form-select" id="hora" required><option value="">Selecciona la hora</option><option>09:00</option><option>09:30</option><option>10:00</option><option>10:30</option><option>11:00</option><option>11:30</option><option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option><option>14:00</option><option>14:30</option><option>15:00</option><option>15:30</option><option>16:00</option><option>16:30</option><option>17:00</option><option>17:30</option><option>18:00</option><option>18:30</option><option>19:00</option><option>19:30</option></select>
+        <div class="invalid-feedback">Selecciona la hora.</div></div>
+    </div>
+    <div id="dispo" class="mt-3"></div>
+   </div>
+   <div class="card-footer bg-transparent d-flex flex-wrap gap-2 justify-content-end p-3">
+    <a class="btn btn-outline-secondary" href="agenda.html">Volver a la agenda</a>
+    <button class="btn btn-primary" type="submit"><i class="bi bi-check2"></i> Confirmar reserva</button>
+   </div>
+  </form>
+ </div>
+ <div class="col-xl-4">
+  <div class="card"><div class="card-body">
+   <h2 class="h6">Resumen</h2>
+   <dl class="row mb-0 small">
+    <dt class="col-5">Local</dt><dd class="col-7" data-local>Mall Plaza Calama</dd>
+    <dt class="col-5">Fecha</dt><dd class="col-7">13/10/2026</dd>
+    <dt class="col-5">Clienta</dt><dd class="col-7" id="rCli">—</dd>
+    <dt class="col-5">Servicio</dt><dd class="col-7" id="rServ">—</dd>
+    <dt class="col-5">Especialista</dt><dd class="col-7" id="rEsp">—</dd>
+    <dt class="col-5">Horario</dt><dd class="col-7" id="rHora">—</dd>
+   </dl>
+  </div></div>
+  <p class="small text-muted mt-3"><i class="bi bi-shield-check"></i> Solo se piden nombre y teléfono, con el consentimiento de la clienta (Ley N.° 19.628).</p>
+ </div>
+</div>
+<div class="modal fade" id="mHist" tabindex="-1" aria-labelledby="mHistT" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content">
+<div class="modal-header"><h2 class="modal-title h5" id="mHistT">Historial de Daniela Pérez</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button></div>
+<div class="modal-body"><div class="table-responsive"><table class="table mb-0"><thead><tr><th>Fecha</th><th>Servicio</th><th>Especialista</th><th>Estado</th></tr></thead><tbody><tr><td>13/10/2026</td><td>Manicure permanente</td><td>Camila Rojas</td><td><span class="chip chip-agendada"><i class="bi bi-clock"></i>Agendada</span></td></tr><tr><td>22/09/2026</td><td>Manicure permanente</td><td>Camila Rojas</td><td><span class="chip chip-atendida"><i class="bi bi-check2-circle"></i>Atendida</span></td></tr><tr><td>01/09/2026</td><td>Diseño de cejas</td><td>Fernanda Díaz</td><td><span class="chip chip-atendida"><i class="bi bi-check2-circle"></i>Atendida</span></td></tr><tr><td>11/08/2026</td><td>Manicure permanente</td><td>Valentina Soto</td><td><span class="chip chip-cancelada"><i class="bi bi-x-circle"></i>Cancelada</span></td></tr></tbody></table></div></div><div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button></div></div></div></div><div class="modal fade" id="mCli" tabindex="-1" aria-labelledby="mCliT" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered "><div class="modal-content">
+<div class="modal-header"><h2 class="modal-title h5" id="mCliT">Registrar clienta nueva</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button></div>
+<div class="modal-body"><form id="fCli" novalidate>
+<div class="mb-3"><label class="form-label" for="cn">Nombre y apellido</label><input class="form-control" id="cn" required><div class="invalid-feedback">Ingresa el nombre.</div></div>
+<div class="mb-3"><label class="form-label" for="ct">Teléfono</label><input class="form-control" id="ct" required inputmode="tel"><div class="invalid-feedback">Ingresa el teléfono.</div></div>
+<div class="form-check"><input class="form-check-input" type="checkbox" id="cc" required><label class="form-check-label" for="cc">La clienta autoriza el registro de su nombre y teléfono para gestionar sus reservas.</label>
+<div class="invalid-feedback">Sin consentimiento no se puede registrar.</div></div></form></div><div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button><button class="btn btn-primary" id="guardarCli"><i class="bi bi-check2"></i> Registrar clienta</button></div></div></div></div></div>
+    <footer class="proto-footer">Prototipo navegable · datos de ejemplo · Proyecto Integrado TIHV43 · INACAP Calama</footer>
+  </main>
+</div>
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="toast-ok" class="toast align-items-center text-bg-dark border-0" role="status" aria-live="polite" aria-atomic="true">
+    <div class="d-flex"><div class="toast-body"><i class="bi bi-check-circle-fill text-success me-2"></i><span></span></div>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Cerrar"></button></div>
+  </div>
+</div>
+<script src="static/bootstrap.bundle.min.js"></script>
+<script src="static/app.js"></script>
+<script>
+(function () {
+  var OCC = {"camila": ["09:30", "10:00", "11:00", "11:30", "12:00", "12:30", "15:00", "15:30"], "fernanda": ["10:00", "10:30", "12:00"], "javiera": ["09:00", "13:00", "13:30"], "valentina": ["10:30", "11:00", "17:00", "17:30"]}, NOM = {"camila": "Camila Rojas", "fernanda": "Fernanda D\u00edaz", "javiera": "Javiera Mu\u00f1oz", "valentina": "Valentina Soto"}, cli = null;
+  var q = new URLSearchParams(location.search);
+  var $ = function (id) { return document.getElementById(id); };
+  if (q.get("esp")) $("esp").value = q.get("esp");
+  if (q.get("hora")) $("hora").value = q.get("hora");
+  function buscar() {
+    var t = $("tel").value.replace(/\D/g, "");
+    $("encontrada").classList.add("d-none"); $("nueva").classList.add("d-none");
+    if (!t) { $("tel").classList.add("is-invalid"); return; }
+    $("tel").classList.remove("is-invalid");
+    if (t === "987654321") { $("encontrada").classList.remove("d-none"); cli = "Daniela Pérez"; }
+    else { $("nueva").classList.remove("d-none"); $("ct").value = "+56 " + $("tel").value; cli = null; }
+    resumen();
+  }
+  $("buscar").addEventListener("click", buscar);
+  $("tel").addEventListener("keydown", function (ev) { if (ev.key === "Enter") { ev.preventDefault(); buscar(); } });
+  $("guardarCli").addEventListener("click", function () {
+    var f = $("fCli");
+    if (!f.checkValidity()) { f.classList.add("was-validated"); return; }
+    cli = $("cn").value; bootstrap.Modal.getInstance($("mCli")).hide();
+    $("nueva").className = "alert alert-success d-flex align-items-center gap-2";
+    $("nueva").innerHTML = '<i class="bi bi-person-check-fill fs-4"></i><div><b>' + cli.replace(/</g, "") + '</b> registrada con su consentimiento.</div>';
+    resumen();
+  });
+  function sumar(h, m) { var p = h.split(":"), t = +p[0] * 60 + +p[1] + m; return ("0" + Math.floor(t / 60)).slice(-2) + ":" + ("0" + t % 60).slice(-2); }
+  function validar() {
+    var esp = $("esp").value, h = $("hora").value, s = $("serv"), d = $("dispo");
+    var min = s.selectedIndex > 0 ? +s.options[s.selectedIndex].dataset.min : 30;
+    d.innerHTML = "";
+    if (!esp || !h) return true;
+    var need = [], i; for (i = 0; i < min; i += 30) need.push(sumar(h, i));
+    var ocup = need.some(function (x) { return (OCC[esp] || []).indexOf(x) >= 0; });
+    if (!ocup) { d.innerHTML = '<div class="alert alert-success py-2 mb-0"><i class="bi bi-check-circle-fill"></i> Bloque disponible: ' + h + "–" + sumar(h, min) + " con " + NOM[esp] + ".</div>"; return true; }
+    var libres = [], all = ["09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "19:30"];
+    all.forEach(function (x) {
+      var n = []; for (var j = 0; j < min; j += 30) n.push(sumar(x, j));
+      if (libres.length < 4 && n.every(function (y) { return (OCC[esp] || []).indexOf(y) < 0 && y < "20:00"; })) libres.push(x);
+    });
+    d.innerHTML = '<div class="alert alert-warning mb-0"><b><i class="bi bi-exclamation-triangle-fill"></i> El bloque de las ' + h + ' está ocupado.</b><div class="mt-2 small">Horarios libres más cercanos con ' + NOM[esp] + ':</div><div class="d-flex flex-wrap gap-2 mt-2">' +
+      libres.map(function (x) { return '<button type="button" class="btn btn-sm btn-outline-success sugerencia" data-h="' + x + '">' + x + "</button>"; }).join("") + "</div></div>";
+    d.querySelectorAll(".sugerencia").forEach(function (b) { b.addEventListener("click", function () { $("hora").value = b.dataset.h; validar(); resumen(); }); });
+    return false;
+  }
+  function resumen() {
+    $("rCli").textContent = cli || "—";
+    $("rServ").textContent = $("serv").value || "—";
+    $("rEsp").textContent = NOM[$("esp").value] || "—";
+    $("rHora").textContent = $("hora").value || "—";
+  }
+  ["esp", "hora", "serv"].forEach(function (k) { $(k).addEventListener("change", function () { validar(); resumen(); }); });
+  $("f").addEventListener("submit", function (ev) {
+    if (!cli) { ev.stopImmediatePropagation(); ev.preventDefault(); $("tel").classList.add("is-invalid"); $("tel").focus(); return; }
+    if (!validar()) { ev.stopImmediatePropagation(); ev.preventDefault(); }
+  }, true);
+  validar(); resumen();
+})();
+</script>
+</body>
+</html>

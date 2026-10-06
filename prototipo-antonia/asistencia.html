@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asistencia del día · Antonia Centro de Estética</title>
+<link rel="stylesheet" href="static/bootstrap.min.css">
+<link rel="stylesheet" href="static/bootstrap-icons.min.css">
+<link rel="stylesheet" href="static/app.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23BE185D'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EA%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="app-header d-flex align-items-center px-3 gap-3">
+  <button class="btn btn-outline-secondary d-lg-none px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu" aria-label="Abrir menú"><i class="bi bi-list fs-4"></i></button>
+  <a class="brand fs-5" href="agenda.html">Antonia<span class="dot">.</span> <small class="d-none d-md-inline">Centro de Estética</small></a>
+  <div class="ms-auto d-flex align-items-center gap-2 header-right">
+    <span class="local-chip"><i class="bi bi-geo-alt-fill"></i> <span data-local>Mall Plaza Calama</span></span>
+    <a data-rol="propietaria" class="btn btn-sm btn-outline-primary d-none d-sm-inline-flex" href="sucursales.html"><i class="bi bi-arrow-left-right"></i> Cambiar sucursal</a>
+    <div class="dropdown">
+      <button class="btn btn-sm btn-light border dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-circle"></i> <span class="d-none d-sm-inline" data-rol-nombre>Recepcionista</span></button>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><span class="dropdown-item-text small text-muted">Sesión iniciada como <b data-rol-nombre>Recepcionista</b></span></li>
+        <li data-rol="propietaria"><a class="dropdown-item" href="sucursales.html"><i class="bi bi-arrow-left-right"></i> Cambiar sucursal</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="index.html" data-logout><i class="bi bi-box-arrow-right"></i> Cerrar sesión</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="d-flex">
+  <aside class="app-sidebar d-none d-lg-block"><ul class="nav flex-column gap-1 p-3 side-nav"><li class="nav-item"><a class="nav-link" href="agenda.html"><i class="bi bi-calendar3"></i>Agenda</a></li><li class="nav-item"><a class="nav-link active" href="asistencia.html" aria-current="page"><i class="bi bi-person-check"></i>Asistencia</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="especialistas.html"><i class="bi bi-people"></i>Especialistas</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="comisiones.html"><i class="bi bi-cash-coin"></i>Comisiones</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="sucursales.html"><i class="bi bi-shop"></i>Sucursales</a></li><li class="sep">Otros módulos</li><li class="nav-item"><a class="nav-link otro" href="caja.html"><i class="bi bi-receipt"></i>Ventas y caja</a></li><li class="nav-item"><a class="nav-link otro" href="inventario.html"><i class="bi bi-box-seam"></i>Inventario</a></li><li class="nav-item"><a class="nav-link otro" href="reportes.html"><i class="bi bi-bar-chart"></i>Reportes</a></li></ul></aside>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="menu" aria-labelledby="menuLabel" style="width:280px">
+    <div class="offcanvas-header border-bottom"><h2 class="offcanvas-title h5 brand" id="menuLabel">Antonia<span class="dot">.</span></h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button></div>
+    <div class="offcanvas-body p-0"><ul class="nav flex-column gap-1 p-3 side-nav"><li class="nav-item"><a class="nav-link" href="agenda.html"><i class="bi bi-calendar3"></i>Agenda</a></li><li class="nav-item"><a class="nav-link active" href="asistencia.html" aria-current="page"><i class="bi bi-person-check"></i>Asistencia</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="especialistas.html"><i class="bi bi-people"></i>Especialistas</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="comisiones.html"><i class="bi bi-cash-coin"></i>Comisiones</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="sucursales.html"><i class="bi bi-shop"></i>Sucursales</a></li><li class="sep">Otros módulos</li><li class="nav-item"><a class="nav-link otro" href="caja.html"><i class="bi bi-receipt"></i>Ventas y caja</a></li><li class="nav-item"><a class="nav-link otro" href="inventario.html"><i class="bi bi-box-seam"></i>Inventario</a></li><li class="nav-item"><a class="nav-link otro" href="reportes.html"><i class="bi bi-bar-chart"></i>Reportes</a></li></ul></div>
+  </div>
+  <main class="app-main">
+    
+    <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+      <h1 class="mb-0 me-2">Asistencia del día</h1><span class="page-id" title="Código de pantalla en el informe">P-05</span>
+      <div class="ms-auto d-flex flex-wrap gap-2 acciones"></div>
+    </div>
+    <div class="contenido">
+<div class="row g-3 mb-3">
+ <div class="col-6 col-md-3"><div class="stat"><div class="v">2</div><div class="l">Presentes ahora</div></div></div>
+ <div class="col-6 col-md-3"><div class="stat"><div class="v">1</div><div class="l">Sin entrada</div></div></div>
+ <div class="col-6 col-md-3"><div class="stat"><div class="v">1</div><div class="l">Jornada cerrada</div></div></div>
+ <div class="col-6 col-md-3"><div class="stat"><div class="v">10:24</div><div class="l">Hora actual</div></div></div>
+</div>
+<div class="card mb-4"><div class="card-body pb-0"><h2 class="h5">Martes 13 de octubre de 2026</h2></div>
+<div class="table-responsive"><table class="table align-middle mb-0">
+<thead><tr><th>Especialista</th><th>Estado</th><th>Entrada</th><th>Salida</th><th class="text-end">Acción</th></tr></thead>
+<tbody><tr><td class='fw-semibold'>Camila Rojas</td><td><span class="chip chip-presente"><i class="bi bi-check2-circle"></i>Presente</span></td><td>08:52</td><td>—</td><td class='text-end'><button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#mAs" data-tipo="salida" data-nom="Camila Rojas"><i class="bi bi-box-arrow-right"></i> Marcar salida</button></td></tr><tr><td class='fw-semibold'>Fernanda Díaz</td><td><span class="chip chip-presente"><i class="bi bi-check2-circle"></i>Presente</span></td><td>09:05</td><td>—</td><td class='text-end'><button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#mAs" data-tipo="salida" data-nom="Fernanda Díaz"><i class="bi bi-box-arrow-right"></i> Marcar salida</button></td></tr><tr><td class='fw-semibold'>Javiera Muñoz</td><td><span class="chip chip-sin"><i class="bi bi-exclamation-circle"></i>Sin entrada</span></td><td>—</td><td>—</td><td class='text-end'><button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#mAs" data-tipo="entrada" data-nom="Javiera Muñoz"><i class="bi bi-box-arrow-in-right"></i> Marcar entrada</button></td></tr><tr><td class='fw-semibold'>Valentina Soto</td><td><span class="chip chip-salida"><i class="bi bi-box-arrow-right"></i>Salida registrada</span></td><td>09:00</td><td>14:00</td><td class='text-end'><span class="small text-muted">Jornada cerrada</span></td></tr></tbody></table></div></div>
+<div data-rol="propietaria"><div class="card"><div class="card-body pb-0 d-flex flex-wrap align-items-center gap-2">
+  <h2 class="h5 mb-0 me-auto">Días trabajados por período</h2>
+  <select class="form-select" style="max-width:260px" aria-label="Período"><option>1 al 15 de octubre de 2026</option><option>16 al 30 de septiembre de 2026</option></select>
+</div>
+<div class="table-responsive mt-3"><table class="table mb-0"><thead><tr><th>Especialista</th><th class="text-end">Días</th><th class="text-end">Horas</th></tr></thead>
+<tbody><tr><td>Camila Rojas</td><td class='text-end'>11</td><td class='text-end'>96,5</td></tr><tr><td>Fernanda Díaz</td><td class='text-end'>10</td><td class='text-end'>88,0</td></tr><tr><td>Javiera Muñoz</td><td class='text-end'>9</td><td class='text-end'>74,5</td></tr><tr><td>Valentina Soto</td><td class='text-end'>6</td><td class='text-end'>30,0</td></tr></tbody></table></div></div></div>
+<div class="modal fade" id="mAs" tabindex="-1" aria-labelledby="mAsT" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered "><div class="modal-content">
+<div class="modal-header"><h2 class="modal-title h5" id="mAsT">Registrar asistencia</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button></div>
+<div class="modal-body"><p class="mb-0" id="asTxt"></p><p class="small text-muted mt-2 mb-0">Se guarda la fecha, la hora y el local.</p></div><div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">Volver</button><a class="btn btn-primary" id="asOk" href="asistencia.html?ok=entrada"><i class="bi bi-check2"></i> Confirmar</a></div></div></div></div></div>
+    <footer class="proto-footer">Prototipo navegable · datos de ejemplo · Proyecto Integrado TIHV43 · INACAP Calama</footer>
+  </main>
+</div>
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="toast-ok" class="toast align-items-center text-bg-dark border-0" role="status" aria-live="polite" aria-atomic="true">
+    <div class="d-flex"><div class="toast-body"><i class="bi bi-check-circle-fill text-success me-2"></i><span></span></div>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Cerrar"></button></div>
+  </div>
+</div>
+<script src="static/bootstrap.bundle.min.js"></script>
+<script src="static/app.js"></script>
+<script>
+document.getElementById("mAs").addEventListener("show.bs.modal", function (ev) {
+  var b = ev.relatedTarget, tipo = b.getAttribute("data-tipo"), nom = b.getAttribute("data-nom");
+  document.getElementById("asTxt").innerHTML = "¿Registrar la <b>" + tipo + "</b> de <b>" + nom + "</b> a las <b>10:24</b>?";
+  document.getElementById("asOk").href = "asistencia.html?ok=" + tipo;
+});
+</script>
+</body>
+</html>

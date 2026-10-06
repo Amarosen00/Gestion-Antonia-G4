@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selector de sucursal · Antonia Centro de Estética</title>
+<link rel="stylesheet" href="static/bootstrap.min.css">
+<link rel="stylesheet" href="static/bootstrap-icons.min.css">
+<link rel="stylesheet" href="static/app.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23BE185D'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EA%3C/text%3E%3C/svg%3E">
+</head>
+<body data-solo="propietaria">
+<header class="app-header d-flex align-items-center px-3 gap-3">
+  <button class="btn btn-outline-secondary d-lg-none px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu" aria-label="Abrir menú"><i class="bi bi-list fs-4"></i></button>
+  <a class="brand fs-5" href="agenda.html">Antonia<span class="dot">.</span> <small class="d-none d-md-inline">Centro de Estética</small></a>
+  <div class="ms-auto d-flex align-items-center gap-2 header-right">
+    <span class="local-chip"><i class="bi bi-geo-alt-fill"></i> <span data-local>Mall Plaza Calama</span></span>
+    <a data-rol="propietaria" class="btn btn-sm btn-outline-primary d-none d-sm-inline-flex" href="sucursales.html"><i class="bi bi-arrow-left-right"></i> Cambiar sucursal</a>
+    <div class="dropdown">
+      <button class="btn btn-sm btn-light border dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-circle"></i> <span class="d-none d-sm-inline" data-rol-nombre>Recepcionista</span></button>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><span class="dropdown-item-text small text-muted">Sesión iniciada como <b data-rol-nombre>Recepcionista</b></span></li>
+        <li data-rol="propietaria"><a class="dropdown-item" href="sucursales.html"><i class="bi bi-arrow-left-right"></i> Cambiar sucursal</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="index.html" data-logout><i class="bi bi-box-arrow-right"></i> Cerrar sesión</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="d-flex">
+  <aside class="app-sidebar d-none d-lg-block"><ul class="nav flex-column gap-1 p-3 side-nav"><li class="nav-item"><a class="nav-link" href="agenda.html"><i class="bi bi-calendar3"></i>Agenda</a></li><li class="nav-item"><a class="nav-link" href="asistencia.html"><i class="bi bi-person-check"></i>Asistencia</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="especialistas.html"><i class="bi bi-people"></i>Especialistas</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="comisiones.html"><i class="bi bi-cash-coin"></i>Comisiones</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link active" href="sucursales.html" aria-current="page"><i class="bi bi-shop"></i>Sucursales</a></li><li class="sep">Otros módulos</li><li class="nav-item"><a class="nav-link otro" href="caja.html"><i class="bi bi-receipt"></i>Ventas y caja</a></li><li class="nav-item"><a class="nav-link otro" href="inventario.html"><i class="bi bi-box-seam"></i>Inventario</a></li><li class="nav-item"><a class="nav-link otro" href="reportes.html"><i class="bi bi-bar-chart"></i>Reportes</a></li></ul></aside>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="menu" aria-labelledby="menuLabel" style="width:280px">
+    <div class="offcanvas-header border-bottom"><h2 class="offcanvas-title h5 brand" id="menuLabel">Antonia<span class="dot">.</span></h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button></div>
+    <div class="offcanvas-body p-0"><ul class="nav flex-column gap-1 p-3 side-nav"><li class="nav-item"><a class="nav-link" href="agenda.html"><i class="bi bi-calendar3"></i>Agenda</a></li><li class="nav-item"><a class="nav-link" href="asistencia.html"><i class="bi bi-person-check"></i>Asistencia</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="especialistas.html"><i class="bi bi-people"></i>Especialistas</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="comisiones.html"><i class="bi bi-cash-coin"></i>Comisiones</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link active" href="sucursales.html" aria-current="page"><i class="bi bi-shop"></i>Sucursales</a></li><li class="sep">Otros módulos</li><li class="nav-item"><a class="nav-link otro" href="caja.html"><i class="bi bi-receipt"></i>Ventas y caja</a></li><li class="nav-item"><a class="nav-link otro" href="inventario.html"><i class="bi bi-box-seam"></i>Inventario</a></li><li class="nav-item"><a class="nav-link otro" href="reportes.html"><i class="bi bi-bar-chart"></i>Reportes</a></li></ul></div>
+  </div>
+  <main class="app-main">
+    
+    <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+      <h1 class="mb-0 me-2">Selector de sucursal</h1><span class="page-id" title="Código de pantalla en el informe">P-08</span>
+      <div class="ms-auto d-flex flex-wrap gap-2 acciones"></div>
+    </div>
+    <div class="contenido"><p class="text-muted">Elige la sucursal que quieres revisar. Puedes cambiarla en cualquier momento desde el encabezado.</p><div class="row g-3"><div class="col-md-6 col-xl-4"><div class="card sucursal-card h-100"><div class="card-body">
+<div class="d-flex align-items-center gap-2 mb-3"><i class="bi bi-shop"></i><h2 class="h5 mb-0">Mall Plaza Calama</h2></div>
+<div class="row g-2 mb-3"><div class="col-6"><div class="stat"><div class="v">9</div><div class="l">Reservas hoy</div></div></div>
+<div class="col-6"><div class="stat"><div class="v">2 de 4</div><div class="l">Especialistas presentes</div></div></div></div>
+<p class="small mb-0"><i class="bi bi-clock"></i> Próxima hora: 09:30 · Daniela Pérez</p></div>
+<div class="card-footer bg-transparent d-flex gap-2 p-3"><a class="btn btn-primary flex-fill" href="agenda.html" data-elegir-local="Mall Plaza Calama"><i class="bi bi-calendar3"></i> Ver agenda</a>
+<a class="btn btn-outline-primary flex-fill" href="asistencia.html" data-elegir-local="Mall Plaza Calama"><i class="bi bi-person-check"></i> Asistencia</a></div></div></div><div class="col-md-6 col-xl-4"><div class="card sucursal-card h-100"><div class="card-body">
+<div class="d-flex align-items-center gap-2 mb-3"><i class="bi bi-shop"></i><h2 class="h5 mb-0">Vargas</h2></div>
+<div class="row g-2 mb-3"><div class="col-6"><div class="stat"><div class="v">7</div><div class="l">Reservas hoy</div></div></div>
+<div class="col-6"><div class="stat"><div class="v">2 de 3</div><div class="l">Especialistas presentes</div></div></div></div>
+<p class="small mb-0"><i class="bi bi-clock"></i> Próxima hora: 10:00 · Rocío Campos</p></div>
+<div class="card-footer bg-transparent d-flex gap-2 p-3"><a class="btn btn-primary flex-fill" href="agenda.html" data-elegir-local="Vargas"><i class="bi bi-calendar3"></i> Ver agenda</a>
+<a class="btn btn-outline-primary flex-fill" href="asistencia.html" data-elegir-local="Vargas"><i class="bi bi-person-check"></i> Asistencia</a></div></div></div><div class="col-md-6 col-xl-4"><div class="card sucursal-card h-100"><div class="card-body">
+<div class="d-flex align-items-center gap-2 mb-3"><i class="bi bi-shop"></i><h2 class="h5 mb-0">J. A. Espinosa</h2></div>
+<div class="row g-2 mb-3"><div class="col-6"><div class="stat"><div class="v">5</div><div class="l">Reservas hoy</div></div></div>
+<div class="col-6"><div class="stat"><div class="v">2 de 2</div><div class="l">Especialistas presentes</div></div></div></div>
+<p class="small mb-0"><i class="bi bi-clock"></i> Próxima hora: 11:30 · Belén Ortiz</p></div>
+<div class="card-footer bg-transparent d-flex gap-2 p-3"><a class="btn btn-primary flex-fill" href="agenda.html" data-elegir-local="J. A. Espinosa"><i class="bi bi-calendar3"></i> Ver agenda</a>
+<a class="btn btn-outline-primary flex-fill" href="asistencia.html" data-elegir-local="J. A. Espinosa"><i class="bi bi-person-check"></i> Asistencia</a></div></div></div></div></div>
+    <footer class="proto-footer">Prototipo navegable · datos de ejemplo · Proyecto Integrado TIHV43 · INACAP Calama</footer>
+  </main>
+</div>
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="toast-ok" class="toast align-items-center text-bg-dark border-0" role="status" aria-live="polite" aria-atomic="true">
+    <div class="d-flex"><div class="toast-body"><i class="bi bi-check-circle-fill text-success me-2"></i><span></span></div>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Cerrar"></button></div>
+  </div>
+</div>
+<script src="static/bootstrap.bundle.min.js"></script>
+<script src="static/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comisiones · Antonia Centro de Estética</title>
+<link rel="stylesheet" href="static/bootstrap.min.css">
+<link rel="stylesheet" href="static/bootstrap-icons.min.css">
+<link rel="stylesheet" href="static/app.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23BE185D'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EA%3C/text%3E%3C/svg%3E">
+</head>
+<body data-solo="propietaria">
+<header class="app-header d-flex align-items-center px-3 gap-3">
+  <button class="btn btn-outline-secondary d-lg-none px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu" aria-label="Abrir menú"><i class="bi bi-list fs-4"></i></button>
+  <a class="brand fs-5" href="agenda.html">Antonia<span class="dot">.</span> <small class="d-none d-md-inline">Centro de Estética</small></a>
+  <div class="ms-auto d-flex align-items-center gap-2 header-right">
+    <span class="local-chip"><i class="bi bi-geo-alt-fill"></i> <span data-local>Mall Plaza Calama</span></span>
+    <a data-rol="propietaria" class="btn btn-sm btn-outline-primary d-none d-sm-inline-flex" href="sucursales.html"><i class="bi bi-arrow-left-right"></i> Cambiar sucursal</a>
+    <div class="dropdown">
+      <button class="btn btn-sm btn-light border dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-circle"></i> <span class="d-none d-sm-inline" data-rol-nombre>Recepcionista</span></button>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><span class="dropdown-item-text small text-muted">Sesión iniciada como <b data-rol-nombre>Recepcionista</b></span></li>
+        <li data-rol="propietaria"><a class="dropdown-item" href="sucursales.html"><i class="bi bi-arrow-left-right"></i> Cambiar sucursal</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="index.html" data-logout><i class="bi bi-box-arrow-right"></i> Cerrar sesión</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="d-flex">
+  <aside class="app-sidebar d-none d-lg-block"><ul class="nav flex-column gap-1 p-3 side-nav"><li class="nav-item"><a class="nav-link" href="agenda.html"><i class="bi bi-calendar3"></i>Agenda</a></li><li class="nav-item"><a class="nav-link" href="asistencia.html"><i class="bi bi-person-check"></i>Asistencia</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="especialistas.html"><i class="bi bi-people"></i>Especialistas</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link active" href="comisiones.html" aria-current="page"><i class="bi bi-cash-coin"></i>Comisiones</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="sucursales.html"><i class="bi bi-shop"></i>Sucursales</a></li><li class="sep">Otros módulos</li><li class="nav-item"><a class="nav-link otro" href="caja.html"><i class="bi bi-receipt"></i>Ventas y caja</a></li><li class="nav-item"><a class="nav-link otro" href="inventario.html"><i class="bi bi-box-seam"></i>Inventario</a></li><li class="nav-item"><a class="nav-link otro" href="reportes.html"><i class="bi bi-bar-chart"></i>Reportes</a></li></ul></aside>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="menu" aria-labelledby="menuLabel" style="width:280px">
+    <div class="offcanvas-header border-bottom"><h2 class="offcanvas-title h5 brand" id="menuLabel">Antonia<span class="dot">.</span></h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button></div>
+    <div class="offcanvas-body p-0"><ul class="nav flex-column gap-1 p-3 side-nav"><li class="nav-item"><a class="nav-link" href="agenda.html"><i class="bi bi-calendar3"></i>Agenda</a></li><li class="nav-item"><a class="nav-link" href="asistencia.html"><i class="bi bi-person-check"></i>Asistencia</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="especialistas.html"><i class="bi bi-people"></i>Especialistas</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link active" href="comisiones.html" aria-current="page"><i class="bi bi-cash-coin"></i>Comisiones</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="sucursales.html"><i class="bi bi-shop"></i>Sucursales</a></li><li class="sep">Otros módulos</li><li class="nav-item"><a class="nav-link otro" href="caja.html"><i class="bi bi-receipt"></i>Ventas y caja</a></li><li class="nav-item"><a class="nav-link otro" href="inventario.html"><i class="bi bi-box-seam"></i>Inventario</a></li><li class="nav-item"><a class="nav-link otro" href="reportes.html"><i class="bi bi-bar-chart"></i>Reportes</a></li></ul></div>
+  </div>
+  <main class="app-main">
+    
+    <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+      <h1 class="mb-0 me-2">Comisiones</h1><span class="page-id" title="Código de pantalla en el informe">P-07</span>
+      <div class="ms-auto d-flex flex-wrap gap-2 acciones"><a class="btn btn-primary" href="comisiones.html?ok=aprobada"><i class="bi bi-check2-all"></i> Aprobar liquidación</a></div>
+    </div>
+    <div class="contenido">
+<div class="card mb-3"><div class="card-body d-flex flex-wrap align-items-end gap-2">
+  <div><label class="form-label" for="per">Período de pago</label>
+  <select class="form-select" id="per" style="min-width:260px"><option>1 al 15 de octubre de 2026</option><option>16 al 30 de septiembre de 2026</option><option>1 al 15 de septiembre de 2026</option></select></div>
+  <div><label class="form-label" for="loc">Sucursal</label>
+  <select class="form-select" id="loc"><option>Todas</option><option>Mall Plaza Calama</option><option>Vargas</option><option>J. A. Espinosa</option></select></div>
+  <a class="btn btn-outline-primary" href="comisiones.html"><i class="bi bi-calculator"></i> Calcular</a>
+</div></div>
+<div class="row g-3 mb-3">
+ <div class="col-6 col-lg-3"><div class="stat"><div class="v">$523.700</div><div class="l">Total en comisiones</div></div></div>
+ <div class="col-6 col-lg-3"><div class="stat"><div class="v">$1.440.000</div><div class="l">Ventas consideradas</div></div></div>
+ <div class="col-6 col-lg-3"><div class="stat"><div class="v">99</div><div class="l">Servicios realizados</div></div></div>
+ <div class="col-6 col-lg-3"><div class="stat"><div class="v">3</div><div class="l">Vouchers anulados excluidos</div></div></div>
+</div>
+<div class="card"><div class="table-responsive"><table class="table align-middle mb-0">
+<thead><tr><th>Especialista</th><th class="text-end d-none d-md-table-cell">Servicios</th><th class="text-end d-none d-md-table-cell">Monto base</th><th class="text-end">Comisión</th><th class="text-end">Detalle</th></tr></thead>
+<tbody><tr><td class='fw-semibold'>Camila Rojas</td><td class='text-end d-none d-md-table-cell'>30</td><td class='text-end d-none d-md-table-cell'>$593.000</td><td class='text-end fw-bold'>$237.200</td><td class='text-end'><button class='btn btn-sm btn-outline-primary' data-bs-toggle='modal' data-bs-target='#mcamila' aria-label='Ver detalle de Camila Rojas'><i class='bi bi-list-ul'></i><span class='d-none d-md-inline'> Ver detalle</span></button></td></tr><tr><td class='fw-semibold'>Fernanda Díaz</td><td class='text-end d-none d-md-table-cell'>26</td><td class='text-end d-none d-md-table-cell'>$376.000</td><td class='text-end fw-bold'>$131.600</td><td class='text-end'><button class='btn btn-sm btn-outline-primary' data-bs-toggle='modal' data-bs-target='#mfernanda' aria-label='Ver detalle de Fernanda Díaz'><i class='bi bi-list-ul'></i><span class='d-none d-md-inline'> Ver detalle</span></button></td></tr><tr><td class='fw-semibold'>Javiera Muñoz</td><td class='text-end d-none d-md-table-cell'>33</td><td class='text-end d-none d-md-table-cell'>$295.000</td><td class='text-end fw-bold'>$88.500</td><td class='text-end'><button class='btn btn-sm btn-outline-primary' data-bs-toggle='modal' data-bs-target='#mjaviera' aria-label='Ver detalle de Javiera Muñoz'><i class='bi bi-list-ul'></i><span class='d-none d-md-inline'> Ver detalle</span></button></td></tr><tr><td class='fw-semibold'>Valentina Soto</td><td class='text-end d-none d-md-table-cell'>10</td><td class='text-end d-none d-md-table-cell'>$176.000</td><td class='text-end fw-bold'>$66.400</td><td class='text-end'><button class='btn btn-sm btn-outline-primary' data-bs-toggle='modal' data-bs-target='#mvalentina' aria-label='Ver detalle de Valentina Soto'><i class='bi bi-list-ul'></i><span class='d-none d-md-inline'> Ver detalle</span></button></td></tr></tbody>
+<tfoot><tr><th>Total</th><th class="text-end d-none d-md-table-cell">99</th><th class="text-end d-none d-md-table-cell">$1.440.000</th><th class="text-end">$523.700</th><th></th></tr></tfoot></table></div></div>
+<div class="alert alert-light border small mt-3 mb-0"><i class="bi bi-info-circle"></i> Porcentajes de ejemplo (uñas 40 %, pestañas y cejas 35 %, depilación 30 %). La regla real de comisión se debe confirmar con la propietaria.</div>
+<div class="modal fade" id="mcamila" tabindex="-1" aria-labelledby="mcamilaT" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content">
+<div class="modal-header"><h2 class="modal-title h5" id="mcamilaT">Detalle de Camila Rojas · 1 al 15 de octubre</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button></div>
+<div class="modal-body"><div class='table-responsive'><table class='table mb-0'><thead><tr><th>Servicio</th><th class='text-end'>Cantidad</th><th class='text-end'>Monto base</th><th class='text-end'>%</th><th class='text-end'>Comisión</th></tr></thead><tbody><tr><td>Manicure permanente</td><td class='text-end'>18</td><td class='text-end'>$306.000</td><td class='text-end'>40 %</td><td class='text-end fw-semibold'>$122.400</td></tr><tr><td>Uñas acrílicas</td><td class='text-end'>7</td><td class='text-end'>$203.000</td><td class='text-end'>40 %</td><td class='text-end fw-semibold'>$81.200</td></tr><tr><td>Pedicure</td><td class='text-end'>5</td><td class='text-end'>$84.000</td><td class='text-end'>40 %</td><td class='text-end fw-semibold'>$33.600</td></tr></tbody><tfoot><tr><th colspan='4'>Total</th><th class='text-end'>$237.200</th></tr></tfoot></table></div></div><div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button></div></div></div></div><div class="modal fade" id="mfernanda" tabindex="-1" aria-labelledby="mfernandaT" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content">
+<div class="modal-header"><h2 class="modal-title h5" id="mfernandaT">Detalle de Fernanda Díaz · 1 al 15 de octubre</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button></div>
+<div class="modal-body"><div class='table-responsive'><table class='table mb-0'><thead><tr><th>Servicio</th><th class='text-end'>Cantidad</th><th class='text-end'>Monto base</th><th class='text-end'>%</th><th class='text-end'>Comisión</th></tr></thead><tbody><tr><td>Lifting de pestañas</td><td class='text-end'>14</td><td class='text-end'>$280.000</td><td class='text-end'>35 %</td><td class='text-end fw-semibold'>$98.000</td></tr><tr><td>Diseño de cejas</td><td class='text-end'>12</td><td class='text-end'>$96.000</td><td class='text-end'>35 %</td><td class='text-end fw-semibold'>$33.600</td></tr></tbody><tfoot><tr><th colspan='4'>Total</th><th class='text-end'>$131.600</th></tr></tfoot></table></div></div><div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button></div></div></div></div><div class="modal fade" id="mjaviera" tabindex="-1" aria-labelledby="mjavieraT" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content">
+<div class="modal-header"><h2 class="modal-title h5" id="mjavieraT">Detalle de Javiera Muñoz · 1 al 15 de octubre</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button></div>
+<div class="modal-body"><div class='table-responsive'><table class='table mb-0'><thead><tr><th>Servicio</th><th class='text-end'>Cantidad</th><th class='text-end'>Monto base</th><th class='text-end'>%</th><th class='text-end'>Comisión</th></tr></thead><tbody><tr><td>Depilación facial</td><td class='text-end'>16</td><td class='text-end'>$112.000</td><td class='text-end'>30 %</td><td class='text-end fw-semibold'>$33.600</td></tr><tr><td>Depilación de piernas</td><td class='text-end'>9</td><td class='text-end'>$135.000</td><td class='text-end'>30 %</td><td class='text-end fw-semibold'>$40.500</td></tr><tr><td>Depilación axilas</td><td class='text-end'>8</td><td class='text-end'>$48.000</td><td class='text-end'>30 %</td><td class='text-end fw-semibold'>$14.400</td></tr></tbody><tfoot><tr><th colspan='4'>Total</th><th class='text-end'>$88.500</th></tr></tfoot></table></div></div><div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button></div></div></div></div><div class="modal fade" id="mvalentina" tabindex="-1" aria-labelledby="mvalentinaT" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content">
+<div class="modal-header"><h2 class="modal-title h5" id="mvalentinaT">Detalle de Valentina Soto · 1 al 15 de octubre</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button></div>
+<div class="modal-body"><div class='table-responsive'><table class='table mb-0'><thead><tr><th>Servicio</th><th class='text-end'>Cantidad</th><th class='text-end'>Monto base</th><th class='text-end'>%</th><th class='text-end'>Comisión</th></tr></thead><tbody><tr><td>Manicure permanente</td><td class='text-end'>6</td><td class='text-end'>$96.000</td><td class='text-end'>40 %</td><td class='text-end fw-semibold'>$38.400</td></tr><tr><td>Lifting de pestañas</td><td class='text-end'>4</td><td class='text-end'>$80.000</td><td class='text-end'>35 %</td><td class='text-end fw-semibold'>$28.000</td></tr></tbody><tfoot><tr><th colspan='4'>Total</th><th class='text-end'>$66.400</th></tr></tfoot></table></div></div><div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button></div></div></div></div></div>
+    <footer class="proto-footer">Prototipo navegable · datos de ejemplo · Proyecto Integrado TIHV43 · INACAP Calama</footer>
+  </main>
+</div>
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="toast-ok" class="toast align-items-center text-bg-dark border-0" role="status" aria-live="polite" aria-atomic="true">
+    <div class="d-flex"><div class="toast-body"><i class="bi bi-check-circle-fill text-success me-2"></i><span></span></div>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Cerrar"></button></div>
+  </div>
+</div>
+<script src="static/bootstrap.bundle.min.js"></script>
+<script src="static/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Especialistas del local · Antonia Centro de Estética</title>
+<link rel="stylesheet" href="static/bootstrap.min.css">
+<link rel="stylesheet" href="static/bootstrap-icons.min.css">
+<link rel="stylesheet" href="static/app.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23BE185D'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EA%3C/text%3E%3C/svg%3E">
+</head>
+<body data-solo="propietaria">
+<header class="app-header d-flex align-items-center px-3 gap-3">
+  <button class="btn btn-outline-secondary d-lg-none px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu" aria-label="Abrir menú"><i class="bi bi-list fs-4"></i></button>
+  <a class="brand fs-5" href="agenda.html">Antonia<span class="dot">.</span> <small class="d-none d-md-inline">Centro de Estética</small></a>
+  <div class="ms-auto d-flex align-items-center gap-2 header-right">
+    <span class="local-chip"><i class="bi bi-geo-alt-fill"></i> <span data-local>Mall Plaza Calama</span></span>
+    <a data-rol="propietaria" class="btn btn-sm btn-outline-primary d-none d-sm-inline-flex" href="sucursales.html"><i class="bi bi-arrow-left-right"></i> Cambiar sucursal</a>
+    <div class="dropdown">
+      <button class="btn btn-sm btn-light border dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-circle"></i> <span class="d-none d-sm-inline" data-rol-nombre>Recepcionista</span></button>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><span class="dropdown-item-text small text-muted">Sesión iniciada como <b data-rol-nombre>Recepcionista</b></span></li>
+        <li data-rol="propietaria"><a class="dropdown-item" href="sucursales.html"><i class="bi bi-arrow-left-right"></i> Cambiar sucursal</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="index.html" data-logout><i class="bi bi-box-arrow-right"></i> Cerrar sesión</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="d-flex">
+  <aside class="app-sidebar d-none d-lg-block"><ul class="nav flex-column gap-1 p-3 side-nav"><li class="nav-item"><a class="nav-link" href="agenda.html"><i class="bi bi-calendar3"></i>Agenda</a></li><li class="nav-item"><a class="nav-link" href="asistencia.html"><i class="bi bi-person-check"></i>Asistencia</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link active" href="especialistas.html" aria-current="page"><i class="bi bi-people"></i>Especialistas</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="comisiones.html"><i class="bi bi-cash-coin"></i>Comisiones</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="sucursales.html"><i class="bi bi-shop"></i>Sucursales</a></li><li class="sep">Otros módulos</li><li class="nav-item"><a class="nav-link otro" href="caja.html"><i class="bi bi-receipt"></i>Ventas y caja</a></li><li class="nav-item"><a class="nav-link otro" href="inventario.html"><i class="bi bi-box-seam"></i>Inventario</a></li><li class="nav-item"><a class="nav-link otro" href="reportes.html"><i class="bi bi-bar-chart"></i>Reportes</a></li></ul></aside>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="menu" aria-labelledby="menuLabel" style="width:280px">
+    <div class="offcanvas-header border-bottom"><h2 class="offcanvas-title h5 brand" id="menuLabel">Antonia<span class="dot">.</span></h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button></div>
+    <div class="offcanvas-body p-0"><ul class="nav flex-column gap-1 p-3 side-nav"><li class="nav-item"><a class="nav-link" href="agenda.html"><i class="bi bi-calendar3"></i>Agenda</a></li><li class="nav-item"><a class="nav-link" href="asistencia.html"><i class="bi bi-person-check"></i>Asistencia</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link active" href="especialistas.html" aria-current="page"><i class="bi bi-people"></i>Especialistas</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="comisiones.html"><i class="bi bi-cash-coin"></i>Comisiones</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="sucursales.html"><i class="bi bi-shop"></i>Sucursales</a></li><li class="sep">Otros módulos</li><li class="nav-item"><a class="nav-link otro" href="caja.html"><i class="bi bi-receipt"></i>Ventas y caja</a></li><li class="nav-item"><a class="nav-link otro" href="inventario.html"><i class="bi bi-box-seam"></i>Inventario</a></li><li class="nav-item"><a class="nav-link otro" href="reportes.html"><i class="bi bi-bar-chart"></i>Reportes</a></li></ul></div>
+  </div>
+  <main class="app-main">
+    
+    <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+      <h1 class="mb-0 me-2">Especialistas del local</h1><span class="page-id" title="Código de pantalla en el informe">P-06</span>
+      <div class="ms-auto d-flex flex-wrap gap-2 acciones"><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mEsp"><i class="bi bi-person-plus"></i> Agregar especialista</button></div>
+    </div>
+    <div class="contenido">
+<div class="card"><div class="table-responsive"><table class="table align-middle mb-0">
+<thead><tr><th>Especialista</th><th>Servicios que realiza</th><th>Estado</th><th class="text-end">Acciones</th></tr></thead>
+<tbody><tr><td class='fw-semibold'>Camila Rojas<div class='small text-muted fw-normal'>+56 9 6123 4501</div></td><td><div class='d-flex flex-wrap gap-1'><span class="chip chip-servicio">Manicure permanente</span> <span class="chip chip-servicio">Uñas acrílicas</span> <span class="chip chip-servicio">Pedicure</span></div></td><td><span class="chip chip-presente"><i class="bi bi-check2-circle"></i>Activa</span></td><td class='text-end text-nowrap'><button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#mEsp" data-nom="Camila Rojas"><i class="bi bi-pencil"></i> Editar</button> <button class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#mDes" data-nom="Camila Rojas"><i class="bi bi-person-dash"></i> Desactivar</button></td></tr><tr><td class='fw-semibold'>Fernanda Díaz<div class='small text-muted fw-normal'>+56 9 6123 4502</div></td><td><div class='d-flex flex-wrap gap-1'><span class="chip chip-servicio">Lifting de pestañas</span> <span class="chip chip-servicio">Diseño de cejas</span></div></td><td><span class="chip chip-presente"><i class="bi bi-check2-circle"></i>Activa</span></td><td class='text-end text-nowrap'><button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#mEsp" data-nom="Fernanda Díaz"><i class="bi bi-pencil"></i> Editar</button> <button class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#mDes" data-nom="Fernanda Díaz"><i class="bi bi-person-dash"></i> Desactivar</button></td></tr><tr><td class='fw-semibold'>Javiera Muñoz<div class='small text-muted fw-normal'>+56 9 6123 4503</div></td><td><div class='d-flex flex-wrap gap-1'><span class="chip chip-servicio">Depilación facial</span> <span class="chip chip-servicio">Depilación de piernas</span> <span class="chip chip-servicio">Depilación axilas</span></div></td><td><span class="chip chip-presente"><i class="bi bi-check2-circle"></i>Activa</span></td><td class='text-end text-nowrap'><button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#mEsp" data-nom="Javiera Muñoz"><i class="bi bi-pencil"></i> Editar</button> <button class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#mDes" data-nom="Javiera Muñoz"><i class="bi bi-person-dash"></i> Desactivar</button></td></tr><tr><td class='fw-semibold'>Valentina Soto<div class='small text-muted fw-normal'>+56 9 6123 4504</div></td><td><div class='d-flex flex-wrap gap-1'><span class="chip chip-servicio">Manicure permanente</span> <span class="chip chip-servicio">Lifting de pestañas</span></div></td><td><span class="chip chip-presente"><i class="bi bi-check2-circle"></i>Activa</span></td><td class='text-end text-nowrap'><button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#mEsp" data-nom="Valentina Soto"><i class="bi bi-pencil"></i> Editar</button> <button class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#mDes" data-nom="Valentina Soto"><i class="bi bi-person-dash"></i> Desactivar</button></td></tr><tr><td class='fw-semibold'>Isidora Vega<div class='small text-muted fw-normal'>+56 9 6123 4505</div></td><td><div class='d-flex flex-wrap gap-1'><span class="chip chip-servicio">Depilación facial</span></div></td><td><span class="chip chip-salida"><i class="bi bi-box-arrow-right"></i>Inactiva</span></td><td class='text-end text-nowrap'><button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#mEsp" data-nom="Isidora Vega"><i class="bi bi-pencil"></i> Editar</button> </td></tr></tbody></table></div></div>
+<p class="small text-muted mt-2"><i class="bi bi-info-circle"></i> Las especialistas inactivas no aparecen en la agenda, pero se conserva su historial para las comisiones.</p>
+<div class="modal fade" id="mEsp" tabindex="-1" aria-labelledby="mEspT" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content">
+<div class="modal-header"><h2 class="modal-title h5" id="mEspT">Especialista</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button></div>
+<div class="modal-body"><form id="fEsp" data-go="especialistas.html?ok=especialista" novalidate>
+<div class="row g-3"><div class="col-md-7"><label class="form-label" for="en">Nombre y apellido</label><input class="form-control" id="en" required><div class="invalid-feedback">Ingresa el nombre.</div></div>
+<div class="col-md-5"><label class="form-label" for="et">Teléfono</label><input class="form-control" id="et" inputmode="tel" value="+56 9 "></div>
+<div class="col-12"><label class="form-label" for="el">Local</label><select class="form-select" id="el"><option>Mall Plaza Calama</option><option>Vargas</option><option>J. A. Espinosa</option></select></div>
+<div class="col-12"><span class="form-label d-block">Servicios que realiza</span><div class="row g-1"><div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" id="s0"><label class="form-check-label" for="s0">Manicure permanente</label></div></div><div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" id="s1"><label class="form-check-label" for="s1">Uñas acrílicas</label></div></div><div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" id="s2"><label class="form-check-label" for="s2">Pedicure</label></div></div><div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" id="s3"><label class="form-check-label" for="s3">Lifting de pestañas</label></div></div><div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" id="s4"><label class="form-check-label" for="s4">Diseño de cejas</label></div></div><div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" id="s5"><label class="form-check-label" for="s5">Depilación facial</label></div></div><div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" id="s6"><label class="form-check-label" for="s6">Depilación de piernas</label></div></div><div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" id="s7"><label class="form-check-label" for="s7">Depilación axilas</label></div></div></div></div></div></form></div><div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">Volver</button><button class="btn btn-primary" type="submit" form="fEsp"><i class="bi bi-check2"></i> Guardar</button></div></div></div></div><div class="modal fade" id="mDes" tabindex="-1" aria-labelledby="mDesT" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered "><div class="modal-content">
+<div class="modal-header"><h2 class="modal-title h5" id="mDesT">Desactivar especialista</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button></div>
+<div class="modal-body"><p class="mb-0" id="desTxt"></p></div><div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">Volver</button><a class="btn btn-danger" href="especialistas.html?ok=desactivada"><i class="bi bi-person-dash"></i> Desactivar</a></div></div></div></div></div>
+    <footer class="proto-footer">Prototipo navegable · datos de ejemplo · Proyecto Integrado TIHV43 · INACAP Calama</footer>
+  </main>
+</div>
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="toast-ok" class="toast align-items-center text-bg-dark border-0" role="status" aria-live="polite" aria-atomic="true">
+    <div class="d-flex"><div class="toast-body"><i class="bi bi-check-circle-fill text-success me-2"></i><span></span></div>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Cerrar"></button></div>
+  </div>
+</div>
+<script src="static/bootstrap.bundle.min.js"></script>
+<script src="static/app.js"></script>
+<script>
+document.getElementById("mEsp").addEventListener("show.bs.modal", function (ev) {
+  var n = ev.relatedTarget && ev.relatedTarget.getAttribute("data-nom");
+  document.getElementById("mEspT").textContent = n ? "Editar especialista" : "Agregar especialista";
+  document.getElementById("en").value = n || "";
+});
+document.getElementById("mDes").addEventListener("show.bs.modal", function (ev) {
+  document.getElementById("desTxt").innerHTML = "¿Desactivar a <b>" + ev.relatedTarget.getAttribute("data-nom") + "</b>? Dejará de aparecer en la agenda y no se le podrán asignar reservas.";
+});
+</script>
+</body>
+</html>

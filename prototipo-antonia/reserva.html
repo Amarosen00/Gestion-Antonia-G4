@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Detalle de reserva · Antonia Centro de Estética</title>
+<link rel="stylesheet" href="static/bootstrap.min.css">
+<link rel="stylesheet" href="static/bootstrap-icons.min.css">
+<link rel="stylesheet" href="static/app.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23BE185D'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EA%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="app-header d-flex align-items-center px-3 gap-3">
+  <button class="btn btn-outline-secondary d-lg-none px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu" aria-label="Abrir menú"><i class="bi bi-list fs-4"></i></button>
+  <a class="brand fs-5" href="agenda.html">Antonia<span class="dot">.</span> <small class="d-none d-md-inline">Centro de Estética</small></a>
+  <div class="ms-auto d-flex align-items-center gap-2 header-right">
+    <span class="local-chip"><i class="bi bi-geo-alt-fill"></i> <span data-local>Mall Plaza Calama</span></span>
+    <a data-rol="propietaria" class="btn btn-sm btn-outline-primary d-none d-sm-inline-flex" href="sucursales.html"><i class="bi bi-arrow-left-right"></i> Cambiar sucursal</a>
+    <div class="dropdown">
+      <button class="btn btn-sm btn-light border dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-circle"></i> <span class="d-none d-sm-inline" data-rol-nombre>Recepcionista</span></button>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><span class="dropdown-item-text small text-muted">Sesión iniciada como <b data-rol-nombre>Recepcionista</b></span></li>
+        <li data-rol="propietaria"><a class="dropdown-item" href="sucursales.html"><i class="bi bi-arrow-left-right"></i> Cambiar sucursal</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="index.html" data-logout><i class="bi bi-box-arrow-right"></i> Cerrar sesión</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="d-flex">
+  <aside class="app-sidebar d-none d-lg-block"><ul class="nav flex-column gap-1 p-3 side-nav"><li class="nav-item"><a class="nav-link active" href="agenda.html" aria-current="page"><i class="bi bi-calendar3"></i>Agenda</a></li><li class="nav-item"><a class="nav-link" href="asistencia.html"><i class="bi bi-person-check"></i>Asistencia</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="especialistas.html"><i class="bi bi-people"></i>Especialistas</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="comisiones.html"><i class="bi bi-cash-coin"></i>Comisiones</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="sucursales.html"><i class="bi bi-shop"></i>Sucursales</a></li><li class="sep">Otros módulos</li><li class="nav-item"><a class="nav-link otro" href="caja.html"><i class="bi bi-receipt"></i>Ventas y caja</a></li><li class="nav-item"><a class="nav-link otro" href="inventario.html"><i class="bi bi-box-seam"></i>Inventario</a></li><li class="nav-item"><a class="nav-link otro" href="reportes.html"><i class="bi bi-bar-chart"></i>Reportes</a></li></ul></aside>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="menu" aria-labelledby="menuLabel" style="width:280px">
+    <div class="offcanvas-header border-bottom"><h2 class="offcanvas-title h5 brand" id="menuLabel">Antonia<span class="dot">.</span></h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button></div>
+    <div class="offcanvas-body p-0"><ul class="nav flex-column gap-1 p-3 side-nav"><li class="nav-item"><a class="nav-link active" href="agenda.html" aria-current="page"><i class="bi bi-calendar3"></i>Agenda</a></li><li class="nav-item"><a class="nav-link" href="asistencia.html"><i class="bi bi-person-check"></i>Asistencia</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="especialistas.html"><i class="bi bi-people"></i>Especialistas</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="comisiones.html"><i class="bi bi-cash-coin"></i>Comisiones</a></li><li class="nav-item" data-rol="propietaria"><a class="nav-link" href="sucursales.html"><i class="bi bi-shop"></i>Sucursales</a></li><li class="sep">Otros módulos</li><li class="nav-item"><a class="nav-link otro" href="caja.html"><i class="bi bi-receipt"></i>Ventas y caja</a></li><li class="nav-item"><a class="nav-link otro" href="inventario.html"><i class="bi bi-box-seam"></i>Inventario</a></li><li class="nav-item"><a class="nav-link otro" href="reportes.html"><i class="bi bi-bar-chart"></i>Reportes</a></li></ul></div>
+  </div>
+  <main class="app-main">
+    <nav aria-label="Ruta de navegación"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="agenda.html">Agenda</a></li><li class="breadcrumb-item active" aria-current="page">Detalle de reserva</li></ol></nav>
+    <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+      <h1 class="mb-0 me-2">Detalle de reserva</h1><span class="page-id" title="Código de pantalla en el informe">P-04</span>
+      <div class="ms-auto d-flex flex-wrap gap-2 acciones"></div>
+    </div>
+    <div class="contenido">
+<div class="row g-3">
+ <div class="col-xl-8">
+  <div class="card"><div class="card-body p-4">
+   <div class="d-flex flex-wrap align-items-start gap-2 mb-3">
+     <div><div class="text-muted small">Reserva <span id="dId"></span></div><h2 class="h4 mb-0" id="dCli"></h2></div>
+     <div class="ms-auto" id="dEst"></div>
+   </div>
+   <dl class="row mb-0">
+    <dt class="col-sm-4">Teléfono</dt><dd class="col-sm-8" id="dTel"></dd>
+    <dt class="col-sm-4">Servicio</dt><dd class="col-sm-8" id="dServ"></dd>
+    <dt class="col-sm-4">Especialista</dt><dd class="col-sm-8" id="dEsp"></dd>
+    <dt class="col-sm-4">Fecha y hora</dt><dd class="col-sm-8"><span>13/10/2026</span> · <span id="dHora"></span></dd>
+    <dt class="col-sm-4">Local</dt><dd class="col-sm-8" data-local></dd>
+   </dl>
+  </div>
+  <div class="card-footer bg-transparent d-flex flex-wrap gap-2 p-3" id="acciones">
+    <a class="btn btn-outline-secondary me-auto" href="agenda.html"><i class="bi bi-arrow-left"></i> Volver a la agenda</a>
+    <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#mCan"><i class="bi bi-x-circle"></i> Cancelar reserva</button>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mRep"><i class="bi bi-arrow-repeat"></i> Reprogramar</button>
+  </div></div>
+ </div>
+ <div class="col-xl-4"><div class="card"><div class="card-body">
+  <h2 class="h6">Movimientos</h2>
+  <ul class="list-unstyled small mb-0">
+   <li class="mb-2"><i class="bi bi-plus-circle text-muted"></i> Creada el 08/10/2026 a las 16:42 por Recepcionista</li>
+   <li id="movExtra" class="d-none"><i class="bi bi-arrow-repeat text-muted"></i> Reprogramada el 10/10/2026 a las 11:05 por Recepcionista</li>
+  </ul>
+  <p class="small text-muted mt-3 mb-0">Cada cambio queda en la bitácora del sistema.</p>
+ </div></div></div>
+</div>
+<div class="modal fade" id="mRep" tabindex="-1" aria-labelledby="mRepT" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered "><div class="modal-content">
+<div class="modal-header"><h2 class="modal-title h5" id="mRepT">Reprogramar reserva</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button></div>
+<div class="modal-body"><form id="fRep" data-go="agenda.html?ok=reprogramada" novalidate>
+<p class="small text-muted">Se modifica la misma reserva y se libera el bloque anterior.</p>
+<div class="row g-3"><div class="col-6"><label class="form-label" for="rf">Nueva fecha</label><input class="form-control" type="date" id="rf" value="2026-10-13" required></div>
+<div class="col-6"><label class="form-label" for="rh">Nueva hora</label><select class="form-select" id="rh" required><option value="">Selecciona</option><option>14:00</option><option>14:30</option><option>17:30</option><option>18:00</option><option>18:30</option></select>
+<div class="invalid-feedback">Selecciona la hora.</div></div></div>
+<div class="small mt-2 text-success"><i class="bi bi-check-circle"></i> Solo se muestran horas libres de la misma especialista.</div></form></div><div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">Volver</button><button class="btn btn-primary" type="submit" form="fRep"><i class="bi bi-check2"></i> Confirmar cambio</button></div></div></div></div><div class="modal fade" id="mCan" tabindex="-1" aria-labelledby="mCanT" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered "><div class="modal-content">
+<div class="modal-header"><h2 class="modal-title h5" id="mCanT">Cancelar reserva</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button></div>
+<div class="modal-body"><form id="fCan" data-go="agenda.html?ok=cancelada" novalidate>
+<label class="form-label" for="mot">Motivo de la cancelación</label>
+<select class="form-select" id="mot" required><option value="">Selecciona un motivo</option><option>La clienta no puede asistir</option>
+<option>La especialista no está disponible</option><option>Error al agendar</option><option>Otro motivo</option></select>
+<div class="invalid-feedback">El motivo es obligatorio.</div>
+<div class="alert alert-danger small mt-3 mb-0"><i class="bi bi-exclamation-triangle"></i> La reserva quedará como cancelada y el bloque se liberará. Esta acción no se puede deshacer.</div></form></div><div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">Volver</button><button class="btn btn-danger" type="submit" form="fCan"><i class="bi bi-x-circle"></i> Cancelar reserva</button></div></div></div></div></div>
+    <footer class="proto-footer">Prototipo navegable · datos de ejemplo · Proyecto Integrado TIHV43 · INACAP Calama</footer>
+  </main>
+</div>
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="toast-ok" class="toast align-items-center text-bg-dark border-0" role="status" aria-live="polite" aria-atomic="true">
+    <div class="d-flex"><div class="toast-body"><i class="bi bi-check-circle-fill text-success me-2"></i><span></span></div>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Cerrar"></button></div>
+  </div>
+</div>
+<script src="static/bootstrap.bundle.min.js"></script>
+<script src="static/app.js"></script>
+<script>
+(function () {
+  var D = {"R-1021": {"id": "R-1021", "esp": "Camila Rojas", "ini": "09:30", "fin": "10:30", "dur": 60, "cli": "Daniela Pérez", "tel": "+56 9 8765 4321", "serv": "Manicure permanente", "est": "Agendada"}, "R-1022": {"id": "R-1022", "esp": "Camila Rojas", "ini": "11:00", "fin": "13:00", "dur": 120, "cli": "Constanza Araya", "tel": "+56 9 7711 2233", "serv": "Uñas acrílicas", "est": "Agendada"}, "R-1023": {"id": "R-1023", "esp": "Camila Rojas", "ini": "15:00", "fin": "16:00", "dur": 60, "cli": "Paula Castillo", "tel": "+56 9 5544 3322", "serv": "Pedicure", "est": "Reprogramada"}, "R-1024": {"id": "R-1024", "esp": "Fernanda Díaz", "ini": "10:00", "fin": "11:00", "dur": 60, "cli": "Catalina Fuentes", "tel": "+56 9 9988 7766", "serv": "Lifting de pestañas", "est": "Agendada"}, "R-1025": {"id": "R-1025", "esp": "Fernanda Díaz", "ini": "12:00", "fin": "12:30", "dur": 30, "cli": "Martina Reyes", "tel": "+56 9 6655 4433", "serv": "Diseño de cejas", "est": "Agendada"}, "R-1026": {"id": "R-1026", "esp": "Fernanda Díaz", "ini": "16:30", "fin": "17:30", "dur": 60, "cli": "Josefa Morales", "tel": "+56 9 4433 2211", "serv": "Lifting de pestañas", "est": "Cancelada"}, "R-1027": {"id": "R-1027", "esp": "Javiera Muñoz", "ini": "09:00", "fin": "09:30", "dur": 30, "cli": "Antonella Silva", "tel": "+56 9 3322 1100", "serv": "Depilación facial", "est": "Agendada"}, "R-1028": {"id": "R-1028", "esp": "Javiera Muñoz", "ini": "13:00", "fin": "14:00", "dur": 60, "cli": "Francisca Torres", "tel": "+56 9 2211 0099", "serv": "Depilación de piernas", "est": "Agendada"}, "R-1029": {"id": "R-1029", "esp": "Valentina Soto", "ini": "10:30", "fin": "11:30", "dur": 60, "cli": "Sofía Herrera", "tel": "+56 9 1100 9988", "serv": "Lifting de pestañas", "est": "Agendada"}, "R-1030": {"id": "R-1030", "esp": "Valentina Soto", "ini": "17:00", "fin": "18:00", "dur": 60, "cli": "Ignacia Navarro", "tel": "+56 9 8877 6655", "serv": "Manicure permanente", "est": "Agendada"}}, CH = {"Agendada": "<span class=\"chip chip-agendada\"><i class=\"bi bi-clock\"></i>Agendada</span>", "Reprogramada": "<span class=\"chip chip-reprogramada\"><i class=\"bi bi-arrow-repeat\"></i>Reprogramada</span>", "Cancelada": "<span class=\"chip chip-cancelada\"><i class=\"bi bi-x-circle\"></i>Cancelada</span>"};
+  var id = new URLSearchParams(location.search).get("id") || "R-1021";
+  var r = D[id] || D["R-1021"];
+  var s = function (k, v) { document.getElementById(k).textContent = v; };
+  s("dId", r.id); s("dCli", r.cli); s("dTel", r.tel); s("dServ", r.serv + " (" + r.dur + " min)"); s("dEsp", r.esp); s("dHora", r.ini + "–" + r.fin);
+  document.getElementById("dEst").innerHTML = CH[r.est];
+  if (r.est === "Reprogramada") document.getElementById("movExtra").classList.remove("d-none");
+  if (r.est === "Cancelada") {
+    document.getElementById("acciones").innerHTML = '<a class="btn btn-outline-secondary" href="agenda.html"><i class="bi bi-arrow-left"></i> Volver a la agenda</a>' +
+      '<span class="ms-auto small text-muted align-self-center">Motivo: la clienta no puede asistir</span>';
+  }
+})();
+</script>
+</body>
+</html>
