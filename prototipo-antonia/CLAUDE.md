@@ -26,7 +26,8 @@ Un botón principal por pantalla. El estado nunca se indica solo con color (siem
 Diseño adaptable: escritorio 1366 px (PC de caja) y celular 375 px (propietaria); en celular la agenda pasa a lista por especialista.
 
 ## Archivos
-- `*.html`: una pantalla por archivo; el código de pantalla (P-01 a P-08) aparece junto al título y coincide con el informe.
+- `*.html`: una pantalla por archivo. Los códigos P-01 a P-08 del informe no se muestran en pantalla (ver tabla del README).
+- La interfaz no lleva textos de prototipo (notas explicativas, pie "Prototipo navegable", "(simulado)").
 - `static/app.css`: guía de estilo. `static/app.js`: perfil, menú por rol, avisos (?ok=...) y formularios del prototipo.
 - Encabezado y menú se repiten en cada archivo: si se cambian, cambiarlos en todos.
 - No usar CDN: Bootstrap y los íconos están en `static/`.

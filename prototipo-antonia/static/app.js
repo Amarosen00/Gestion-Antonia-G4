@@ -60,7 +60,7 @@
     if (ok && MSG[ok]) {
       var t = document.getElementById("toast-ok");
       if (t) {
-        t.querySelector(".toast-body span").textContent = MSG[ok] + " (simulado)";
+        t.querySelector(".toast-body span").textContent = MSG[ok];
         bootstrap.Toast.getOrCreateInstance(t, { delay: 4500 }).show();
       }
     }
@@ -71,7 +71,8 @@
         ev.preventDefault();
         if (!f.checkValidity()) { f.classList.add("was-validated"); return; }
         if (f.id === "login") {
-          var r = f.querySelector("[name=perfil]").value;
+          var u = f.querySelector("[name=u]").value.toLowerCase();
+          var r = /propietari|due[nñ]a/.test(u) ? "propietaria" : "recepcionista";
           set("antonia_rol", r);
           if (r === "recepcionista") set("antonia_local", LOCALES[0]);
           location.href = r === "propietaria" ? "sucursales.html" : "agenda.html";

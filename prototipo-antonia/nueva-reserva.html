@@ -37,7 +37,7 @@
   <main class="app-main">
     <nav aria-label="Ruta de navegación"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="agenda.html">Agenda</a></li><li class="breadcrumb-item active" aria-current="page">Nueva reserva</li></ol></nav>
     <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
-      <h1 class="mb-0 me-2">Nueva reserva</h1><span class="page-id" title="Código de pantalla en el informe">P-03</span>
+      <h1 class="mb-0 me-2">Nueva reserva</h1>
       <div class="ms-auto d-flex flex-wrap gap-2 acciones"></div>
     </div>
     <div class="contenido">
@@ -47,12 +47,11 @@
    <div class="card-body p-4">
     <h2 class="h5 mb-3"><span class="badge rounded-pill text-bg-dark me-2">1</span>Clienta</h2>
     <label class="form-label" for="tel">Teléfono de la clienta</label>
-    <div class="input-group mb-2" style="max-width:460px">
+    <div class="input-group mb-3" style="max-width:460px">
       <span class="input-group-text">+56</span>
       <input class="form-control" id="tel" inputmode="tel" placeholder="9 8765 4321" required>
       <button class="btn btn-outline-primary" type="button" id="buscar"><i class="bi bi-search"></i> Buscar</button>
     </div>
-    <div class="form-text mb-3">Prueba con <b>9 8765 4321</b> (clienta registrada) o con cualquier otro número (clienta nueva).</div>
     <div id="encontrada" class="alert alert-success d-none d-flex flex-wrap align-items-center gap-2" role="status">
       <i class="bi bi-person-check-fill fs-4"></i><div class="flex-fill"><b>Daniela Pérez</b><br><span class="small">4 reservas anteriores · consentimiento registrado</span></div>
       <button class="btn btn-sm btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#mHist"><i class="bi bi-clock-history"></i> Ver historial</button>
@@ -96,7 +95,6 @@
     <dt class="col-5">Horario</dt><dd class="col-7" id="rHora">—</dd>
    </dl>
   </div></div>
-  <p class="small text-muted mt-3"><i class="bi bi-shield-check"></i> Solo se piden nombre y teléfono, con el consentimiento de la clienta (Ley N.° 19.628).</p>
  </div>
 </div>
 <div class="modal fade" id="mHist" tabindex="-1" aria-labelledby="mHistT" aria-hidden="true">
@@ -110,7 +108,6 @@
 <div class="mb-3"><label class="form-label" for="ct">Teléfono</label><input class="form-control" id="ct" required inputmode="tel"><div class="invalid-feedback">Ingresa el teléfono.</div></div>
 <div class="form-check"><input class="form-check-input" type="checkbox" id="cc" required><label class="form-check-label" for="cc">La clienta autoriza el registro de su nombre y teléfono para gestionar sus reservas.</label>
 <div class="invalid-feedback">Sin consentimiento no se puede registrar.</div></div></form></div><div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button><button class="btn btn-primary" id="guardarCli"><i class="bi bi-check2"></i> Registrar clienta</button></div></div></div></div></div>
-    <footer class="proto-footer">Prototipo navegable · datos de ejemplo · Proyecto Integrado TIHV43 · INACAP Calama</footer>
   </main>
 </div>
 <div class="toast-container position-fixed bottom-0 end-0 p-3">

@@ -17,7 +17,7 @@
       <div class="text-muted">Centro de Estética · Sistema de gestión</div>
     </div>
     <div class="card shadow-sm"><div class="card-body p-4">
-      <div class="d-flex align-items-center mb-3"><h1 class="h4 mb-0 me-2">Iniciar sesión</h1><span class="page-id">P-01</span></div>
+      <h1 class="h4 mb-3">Iniciar sesión</h1>
       <div id="err" class="alert alert-danger d-none py-2" role="alert"><i class="bi bi-exclamation-triangle-fill"></i> Usuario o contraseña incorrectos.</div>
       <form id="login" data-go="agenda.html" novalidate>
         <div class="mb-3"><label class="form-label" for="u">Usuario</label>
@@ -27,17 +27,9 @@
           <div class="input-group"><input class="form-control" id="p" name="p" type="password" autocomplete="current-password" required>
           <button class="btn btn-outline-secondary" type="button" id="ver" aria-label="Mostrar contraseña"><i class="bi bi-eye"></i></button>
           <div class="invalid-feedback">Ingresa tu contraseña.</div></div></div>
-        <div class="mb-3"><label class="form-label" for="perfil">Perfil de demostración</label>
-          <select class="form-select" id="perfil" name="perfil">
-            <option value="recepcionista">Recepcionista (local Mall Plaza Calama)</option>
-            <option value="propietaria">Propietaria (las tres sucursales)</option>
-          </select></div>
         <button class="btn btn-primary w-100" type="submit"><i class="bi bi-box-arrow-in-right"></i> Ingresar</button>
       </form>
-      <p class="demo-note mt-3 mb-0"><i class="bi bi-info-circle"></i> Prototipo: escribe cualquier usuario y contraseña. En el sistema real el perfil
-      lo define la cuenta y no se elige al ingresar.</p>
     </div></div>
-    <p class="text-center text-muted small mt-3">La sesión se cierra tras 15 minutos sin actividad.</p>
   </div>
 </main>
 <script src="static/bootstrap.bundle.min.js"></script>

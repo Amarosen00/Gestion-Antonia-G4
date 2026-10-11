@@ -5,11 +5,11 @@ Informe de diseño de la solución, Proyecto Integrado TIHV43, INACAP Calama.
 
 - **Tecnología:** HTML, Bootstrap 5.3 y JavaScript, sin servidor. Es el mismo enfoque de las plantillas de Django que se usarán en la construcción.
 - **Datos:** todos son de ejemplo. El prototipo no guarda reservas ni cambios; solo recuerda el perfil y la sucursal elegidos.
-- **Perfiles:** en la pantalla de inicio de sesión se elige *Recepcionista* o *Propietaria* (en el sistema real lo define la cuenta).
+- **Perfiles:** se entra como *Propietaria* si el usuario contiene "propietaria" o "dueña" (por ejemplo, `propietaria`); cualquier otro usuario entra como *Recepcionista*. La contraseña puede ser cualquiera.
 
 ## Pantallas
 
-| Código | Pantalla | Archivo | Perfil |
+| Código en el informe | Pantalla | Archivo | Perfil |
 |---|---|---|---|
 | P-01 | Inicio de sesión | `index.html` | Ambos |
 | P-02 | Agenda del día | `agenda.html` | Ambos |
